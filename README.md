@@ -1,97 +1,165 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Gatsby Starter Tailwind
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<div align="center">
+  <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
+</div>
 
-## 🚀 Quick start
+<div align="center">
+  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
+  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
+  Illustrations by <a href="https://undraw.co/">unDraw</a>.
+  <br />
+  <br />
+</div>
+  
+![alt text](https://image.ibb.co/jv6FC7/gatsby_starter_tailwind.png "Screenshot of Gatsby Starter Tailwind homepage")
+  
+<p align="center">View demo <a href="https://quizzical-mcclintock-0226ac.netlify.com/">here</a>.</p>
 
-1.  **Create a Gatsby site.**
+## What is Tailwind?
+>"Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."
+–[Tailwind](https://tailwindcss.com)
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+## What is Gatsby?
+>"Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps." -[Gatsby](https://www.gatsbyjs.org/)
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## Get started
 
-1.  **Start developing.**
+Install Gatsby CLI:
+```sh
+npm i --global gatsby-cli
+```
 
-    Navigate into your new site’s directory and start it up.
+Create new Gatsby project using this starter:
+```sh
+gatsby new my-new-website https://github.com/oddstronaut/gatsby-starter-tailwind
+```
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+Build stylesheet from Tailwind config and run the project in development mode:
+```sh
+cd my-new-website
+npm run develop
+```
 
-1.  **Open the source code and start editing!**
+## Format and lint
+* `npm run analyze` - See what ESLint and Prettier can fix
+* `npm run fix` - Run Prettier and ESLint with the `--fix` option
 
-    Your site is now running at `http://localhost:8000`!
+## Build your site
+Use `npm run build` to build your site for production.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## Deploy
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/oddstronaut/gatsby-starter-tailwind)
 
-## 🧐 What's inside?
+## Resources
+* [Gatsby documentation](https://www.gatsbyjs.org/docs/)
+* [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
+* [Prettier documentation](https://prettier.io/docs/en/index.html)
+* [ESLint documentation](https://eslint.org/docs/user-guide/configuring)
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+## License
+[MIT](https://github.com/oddstronaut/gatsby-starter-tailwind/blob/master/LICENSE.md)
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## How you can help
+Enjoying Gatsby Starter Tailwind and want to help? You can:
+* [Create an issue](https://github.com/oddstronaut/gatsby-starter-tailwind/issues/new) with some constructive criticism
+* [Submit a pull request](https://github.com/oddstronaut/gatsby-starter-tailwind/compare) with some improvements to the project
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Contributors
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://impuls.dev"
+        ><img
+          src="https://avatars3.githubusercontent.com/u/8146736?v=4"
+          width="100px;"
+          alt="impulse"
+        /><br /><sub><b>impulse</b></sub></a
+      ><br /><a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=impulse"
+        title="Code"
+        >💻</a
+      >
+    </td>
+    <td align="center">
+      <a href="https://gandreadis.com"
+        ><img
+          src="https://avatars3.githubusercontent.com/u/5272244?v=4"
+          width="100px;"
+          alt="Georgios Andreadis"
+        /><br /><sub><b>Georgios Andreadis</b></sub></a
+      ><br /><a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=gandreadis"
+        title="Code"
+        >💻</a
+      >
+    </td>
+    <td align="center">
+      <a href="https://github.com/altruisticsoftware"
+        ><img
+          src="https://avatars3.githubusercontent.com/u/12105346?v=4"
+          width="100px;"
+          alt="Chris"
+        /><br /><sub><b>Chris</b></sub></a
+      ><br /><a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=altruisticsoftware"
+        title="Code"
+        >💻</a
+      >
+    </td>
+    <td align="center">
+      <a href="https://github.com/dalwadani"
+        ><img
+          src="https://avatars1.githubusercontent.com/u/4618082?v=4"
+          width="100px;"
+          alt="Dhaifallah Alwadani"
+        /><br /><sub><b>Dhaifallah Alwadani</b></sub></a
+      ><br /><a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=dalwadani"
+        title="Code"
+        >💻</a
+      >
+    </td>
+    <td align="center">
+      <a href="http://nigelball.org"
+        ><img
+          src="https://avatars2.githubusercontent.com/u/815408?v=4"
+          width="100px;"
+          alt="Nigel Ball"
+        /><br /><sub><b>Nigel Ball</b></sub></a
+      ><br /><a href="#ideas-nigelb135" title="Ideas, Planning, & Feedback"
+        >🤔</a
+      >
+      <a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=nigelb135"
+        title="Code"
+        >💻</a
+      >
+    </td>
+    <td align="center">
+      <a href="https://github.com/ericpoe"
+        ><img
+          src="https://avatars1.githubusercontent.com/u/1981351?v=4"
+          width="100px;"
+          alt="Eric Poe"
+        /><br /><sub><b>Eric Poe</b></sub></a
+      ><br /><a
+        href="https://github.com/Oddstronaut/gatsby-starter-tailwind/commits?author=ericpoe"
+        title="Code"
+        >💻</a
+      >
+    </td>
+  </tr>
+</table>
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -1,53 +1,59 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import Header from "./header";
 
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+function Layout({ children }) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+      `}
+      render={data => (
+        <div className="flex flex-col font-sans min-h-screen text-gray-900">
+          <Header siteTitle={data.site.siteMetadata.title} />
+
+          <div className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
+            {children}
+          </div>
+
+          <footer className="bg-blue-500">
+            <div className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
+              <p className="text-white">
+                Created by{" "}
+                <a
+                  href="https://taylorbryant.blog"
+                  className="font-bold no-underline text-white"
+                >
+                  Taylor Bryant
+                </a>
+              </p>
+
+              <p>
+                <a
+                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+                  className="font-bold no-underline text-white"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
           </footer>
         </div>
-      </>
-    )}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+      )}
+    />
+  );
 }
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default Layout;

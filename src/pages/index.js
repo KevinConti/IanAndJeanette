@@ -1,80 +1,41 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Images from "../components/Images/Images"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
- const IndexPage = () => (
-  <Images />
-)
+function IndexPage() {
+  return (
+    <Layout>
+      <SEO
+        title="Home"
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+      />
 
-export default IndexPage 
+      <div className="text-center">
+        <img
+          src={catAndHumanIllustration}
+          className="block mx-auto w-1/2"
+          alt="Cat and human sitting on a couch"
+        />
 
-/* const Container = styled.div`
-  margin: 3rem auto;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
+        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
+          Hey there! Welcome to your first Gatsby site.
+        </h2>
 
-const UserWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 0 auto 12px auto;
-  &:last-child {
-    margin-bottom: 0;
-  }
-`
+        <p className="leading-loose">
+          This is a barebones starter for Gatsby styled using{" "}
+          <a
+            href="https://tailwindcss.com/"
+            className="font-bold no-underline text-gray-900"
+          >
+            Tailwind
+          </a>
+          , a utility-first CSS framework.
+        </p>
+      </div>
+    </Layout>
+  );
+}
 
-const Avatar = styled.img`
-  flex: 0 0 96px;
-  width: 96px;
-  height: 96px;
-  margin: 0;
-`
-
-const Description = styled.div`
-  flex: 1;
-  margin-left: 18px;
-  padding: 12px;
-`
-
-const Username = styled.h2`
-  margin: 0 0 12px 0;
-  padding: 0;
-`
-
-const Excerpt = styled.p`
-  margin: 0;
-`
-
-const User = props => (
-  <UserWrapper>
-    <Avatar src={props.avatar} alt="" />
-    <Description>
-      <Username>{props.username}</Username>
-      <Excerpt>{props.excerpt}</Excerpt>
-    </Description>
-  </UserWrapper>
-)
-
-export default () => (
-  <Container>
-    <h1>About Styled Components</h1>
-    <p>Styled Components is cool</p>
-    <User
-      username="Jane Doe"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <User
-      username="Bob Smith"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-  </Container>
-) */
+export default IndexPage;
