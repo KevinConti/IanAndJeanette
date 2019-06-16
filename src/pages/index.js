@@ -27,7 +27,7 @@ function IndexPage() {
           <button className="bg-yellow-400 rounded text-2xl text-center font-bold inline-block px-24 my-4 py-1 hover:bg-yellow-500 shadow">
             Donate
           </button>
-          <p className="leading-loose text-2xl text-gray 700">
+          <p className="leading-snug text-2xl text-gray 700">
             Help support our mission in South Africa
           </p>
         </div>
