@@ -17,7 +17,7 @@ function Layout({ children }) {
         }
       `}
       render={data => (
-        <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-100">
+        <div className="flex flex-col font-sans min-h-screen text-gray-900 bg-gray-200">
           
           <Header siteTitle={data.site.siteMetadata.title} />
           {/*Fixed div that matches the color of the navbar */}
@@ -32,19 +32,10 @@ function Layout({ children }) {
               <p className="text-white">
                 Created by{" "}
                 <a
-                  href="https://taylorbryant.blog"
+                  href="https://kevinconti.com"
                   className="font-bold no-underline text-white"
                 >
                   Kevin Conti
-                </a>
-              </p>
-
-              <p>
-                <a
-                  href="https://github.com/kevinconti/gatsby-starter-tailwind"
-                  className="font-bold no-underline text-white"
-                >
-                  GitHub
                 </a>
               </p>
             </div>

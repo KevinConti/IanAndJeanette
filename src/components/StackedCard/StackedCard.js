@@ -15,7 +15,7 @@ class StackedCard extends React.Component{
     render() {
         return(
             <div className="md:max-w-lg lg:max-w-xl bg-white rounded-lg overflow-y-visible shadow-md shadow mx-auto pb-8 -mt-32">
-                <div className="font-bold text-3xl ml-4 py-4">{this.props.title}</div>    
+                <div className="font-bold text-3xl px-6 py-4">{this.props.title}</div>    
                 <img className="w-11/12 mx-auto" src={this.state.currentPhoto} alt="Ian and Jeanette" />
             </div>
         )
