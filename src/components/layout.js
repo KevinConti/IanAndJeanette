@@ -18,6 +18,7 @@ function Layout({ children }) {
       `}
       render={data => (
         <div className="flex flex-col font-sans min-h-screen text-gray-900">
+          
           <Header siteTitle={data.site.siteMetadata.title} />
 
           <div className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
@@ -32,13 +33,13 @@ function Layout({ children }) {
                   href="https://taylorbryant.blog"
                   className="font-bold no-underline text-white"
                 >
-                  Taylor Bryant
+                  Kevin Conti
                 </a>
               </p>
 
               <p>
                 <a
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+                  href="https://github.com/kevinconti/gatsby-starter-tailwind"
                   className="font-bold no-underline text-white"
                 >
                   GitHub

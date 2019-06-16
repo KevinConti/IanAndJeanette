@@ -6,9 +6,9 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-teal-500">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link to="/" className="flex items-center no-underline text-white">
+    <nav className="bg-blue-500">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto px-4 pb-32 pt-4 md:p-8">
+        <Link to="/" className="flex items-start no-underline text-white">
           <svg
             className="fill-current h-8 mr-2 w-8"
             width="54"
@@ -49,18 +49,21 @@ function Header({ siteTitle }) {
             </Link>
 
             <Link
-              to="/about"
+              to="/donate"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
-              About
+              Donate
             </Link>
+            {/*
+              These were in the starter template, can use them if we want to add more pages
+              
 
             <Link
               to="/contact"
               className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
