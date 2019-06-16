@@ -24,7 +24,7 @@ function IndexPage() {
 
        <StackedCard title="Help us do God's work!" ></StackedCard>
        <div className="text-center">
-          <button className="bg-blue-500 rounded text-2xl text-center font-semibold text-white hover:text-black inline-block px-24 -mt-16 mb-4 py-1 hover:bg-yellow-500 shadow-md">
+          <button className="bg-blue-600 rounded text-2xl text-center font-semibold text-white hover:text-black inline-block px-24 -mt-16 mb-4 py-1 hover:bg-yellow-500 shadow-md">
             Donate
           </button>
           <p className="leading-snug text-2xl text-gray 700">
