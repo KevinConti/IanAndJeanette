@@ -6,7 +6,7 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-blue-500">
+    <nav className="bg-red-400 text-white">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 pt-4 md:p-8">
         <Link to="/" className="flex items-start no-underline text-white">
           <svg

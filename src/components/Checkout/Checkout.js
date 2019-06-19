@@ -36,7 +36,7 @@ const Checkout = class extends React.Component {
         //Do a sliding animation here
         this.setState({
         "buttonText":"Confirm",
-        "donationAmountProps":"mb-4",
+        "donationAmountProps":"my-4",
         "shouldProcessPayment":true
     });
     }
@@ -73,10 +73,10 @@ const Checkout = class extends React.Component {
 
   render() {
     return (
-    <div className="">
+    <div className="w-full">
         
         <button
-        className={"bg-blue-600 rounded text-2xl text-center font-semibold text-white hover:text-black inline-block px-24 -mt-6 mb-4 py-1 hover:bg-yellow-500 shadow-md"}
+        className={"bg-red-500 rounded text-2xl text-center w-full max-w-sm font-semibold text-white hover:text-black inline-block py-1 hover:bg-green-500"}
         onClick={event => this.getQuantity(event)}
       >
         {this.state.buttonText}
@@ -84,7 +84,7 @@ const Checkout = class extends React.Component {
       <div className={this.state.donationAmountProps}>
             <input 
             onChange={ this.storeQuantity }
-            className="shadow border rounded w-4032 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Donation amount" />
+            className="shadow border rounded py-2 px-3 text-gray-700 w-full max-w-sm leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Donation amount" />
         </div>
     </div>
     )
