@@ -35,6 +35,14 @@ function IndexPage() {
             />
           </div>
         </div>
+        <svg
+          className="h-16 w-full -mt-8"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <polygon fill="#FAF9F7" points="0,100 100,0 100,100" />
+        </svg>
       </section>
       <section className="bg-gray-050">
         <div className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-2 md:p-8">
