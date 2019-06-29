@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React, { useState } from "react";
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -18,7 +18,9 @@ function Header({ siteTitle }) {
           >
             <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
           </svg>
-          <span className="font-bold text-xl tracking-tight hover:font-extrabold hover:tracking-normal">{siteTitle}</span>
+          <span className="font-bold text-xl tracking-tight hover:font-extrabold hover:tracking-normal">
+            {siteTitle}
+          </span>
         </Link>
 
         <button
@@ -65,11 +67,11 @@ function Header({ siteTitle }) {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default Header;

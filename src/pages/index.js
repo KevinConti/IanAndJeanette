@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Checkout from "../components/Checkout/Checkout";
-import image from "../images/iandj.jpg";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Checkout from '../components/Checkout/Checkout';
+import image from '../images/iandj.jpg';
 
 function IndexPage() {
   return (
