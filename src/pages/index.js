@@ -2,8 +2,6 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
-import StackedCard from "../components/StackedCard/StackedCard";
 import Checkout from "../components/Checkout/Checkout";
 import image from "../images/iandj.jpg";
 
@@ -27,11 +25,11 @@ function IndexPage() {
       <section className="bg-gray-100">
         <div className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-2 md:p-8 w-full">
           <div className="md:max-w-lg lg:max-w-xl overflow-y-visible mx-auto pb-8  bg-gray-100">
-            <div className="font-bold text-3xl px-6 py-4">
+            <div className="font-bold text-3xl px-6 pb-4">
               Help us do God's work!
             </div>
             <img
-              className="w-11/12 mx-auto"
+              className="w-11/12 mx-auto rounded"
               src={image}
               alt="Ian and Jeanette"
             />
@@ -48,7 +46,6 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      {/*<StackedCard title="Help us do God's work!" ></StackedCard>*/}
     </Layout>
   );
 }

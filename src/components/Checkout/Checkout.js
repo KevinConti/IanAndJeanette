@@ -62,8 +62,8 @@ const Checkout = class extends React.Component {
       }
     const { error } = await this.stripe.redirectToCheckout({
       items: [{plan: this.state.plan, quantity: parsedQuantity}],
-      successUrl: `http://localhost:8000/page-2/`,
-      cancelUrl: `http://localhost:8000/`,
+      successUrl: `/index.html`,
+      cancelUrl: `/index.html`,
     })
 
     if (error) {
