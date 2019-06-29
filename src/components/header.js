@@ -47,13 +47,6 @@ function Header({ siteTitle }) {
             >
               Home
             </Link>
-
-            <Link
-              to="/donate"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline hover:underline text-white"
-            >
-              Donate
-            </Link>
             {/*
               These were in the starter template, can use them if we want to add more pages
               
