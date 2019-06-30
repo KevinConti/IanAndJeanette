@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        '1vh': '1vh',
+        '2vh': '2vh',
+        '4vh': '4vh',
+        '5vh': '5vh',
         '10vh': '10vh',
       },
       colors: {
