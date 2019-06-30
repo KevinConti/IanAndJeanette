@@ -36,7 +36,7 @@ function IndexPage() {
           </div>
         </div>
         <svg
-          className="h-3vh w-full -mt-4 border-none"
+          className="h-4vh w-full -mt-4 border-none"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
