@@ -5,11 +5,14 @@ const Checkout = class extends React.Component {
   // You can find your key in the Dashboard:
   // https://dashboard.stripe.com/account/apikeys
 
+  // prod_FOo6Ke0bFwRpNV
+  // test plan: 'plan_FGM1SZyKBlCIK6'
+
   constructor() {
     super();
-    this.testPublicKey = 'pk_test_stGXngvsAJBlw1f5FIDGh86k00bjUUw7NM';
+    this.testPublicKey = 'pk_live_xFyLt2kcDZXivCpX62FzxRJ3005LTLBk11';
     this.state = {
-      plan: 'plan_FGM1SZyKBlCIK6',
+      plan: 'plan_FOo7oaK1bQwQCl',
       donationAmountProps: 'hidden mb-4',
       buttonText: 'Donate',
     };
