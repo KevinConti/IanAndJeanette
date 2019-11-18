@@ -19,9 +19,7 @@ const Checkout = class extends React.Component {
   }
 
   componentDidMount() {
-    this.stripe = window.Stripe(this.testPublicKey, {
-      betas: ['checkout_beta_4'],
-    });
+    this.stripe = window.Stripe(this.testPublicKey);
   }
 
   getQuantity = event => {
