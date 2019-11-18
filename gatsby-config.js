@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `Ian and Jeanette`,
     description: `Mission trip to South Africa`,
-    author: `@Kev_Conti`
+    author: `@Kev_Conti`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-stripe`,
-    {
-      resolve: `gatsby-plugin-manifest`,
+    /*{
+      //resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-tailwind`,
         short_name: `starter`,
@@ -16,16 +16,16 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
-      }
-    },
+        icon: `src/images/tailwind-icon.png`,
+      },
+    },*/
     `gatsby-plugin-postcss`,
     {
-      resolve: "gatsby-plugin-purgecss",
+      resolve: 'gatsby-plugin-purgecss',
       options: {
         tailwind: true,
-        purgeOnly: ["src/css/style.css"]
-      }
-    }
-  ]
+        purgeOnly: ['src/css/style.css'],
+      },
+    },
+  ],
 };
