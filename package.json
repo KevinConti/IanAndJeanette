@@ -4,7 +4,8 @@
   "version": "3.0.15",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
-    "gatsby": "2.9.4",
+    "eslint-utils": "^1.4.2",
+    "gatsby": "^2.15.26",
     "gatsby-plugin-manifest": "2.1.1",
     "gatsby-plugin-postcss": "2.0.7",
     "gatsby-plugin-purgecss": "4.0.0",
@@ -15,6 +16,12 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1"
+  },
+  "resolutions": {
+    "**/**/lodash": "^4.17.12",
+    "**/**/eslint-utils": "^1.4.1",
+    "**/**/mixin-deep": "^2.0.1",
+    "**/**/set-value": "^3.0.1"
   },
   "keywords": [
     "gatsby",
@@ -38,7 +45,7 @@
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
-    "eslint": "5.16.0",
+    "eslint": "^6.4.0",
     "eslint-config-react-app": "4.0.1",
     "eslint-plugin-flowtype": "3.10.3",
     "eslint-plugin-import": "2.17.3",
